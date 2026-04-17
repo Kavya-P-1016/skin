@@ -346,7 +346,7 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 <a class="nav-pill" href="#benefits">Skin type</a>
 <a class="nav-pill" href="#product">Best sellers</a>
 <a class="nav-pill" href="#cta">New arrivals</a>
-<a class="nav-pill" href="https://on-off-two.vercel.app/blog" target="_blank" rel="noopener noreferrer">Blog</a>
+<a class="nav-pill" href="#blog">Blog</a>
 </div>
 </div>
 <div class="nav-mega-wrap">
@@ -385,7 +385,7 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 </div>
 <a class="nav-mega-plain" href="#product">Best sellers</a>
 <a class="nav-mega-plain" href="#cta">New arrivals</a>
-<a class="nav-mega-plain" href="https://on-off-two.vercel.app/blog" target="_blank" rel="noopener noreferrer">Blog</a>
+<a class="nav-mega-plain" href="#blog">Blog</a>
 </nav>
 </div>
 </header>
@@ -427,7 +427,7 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 <div class="mobile-nav-chips">
 <a href="#product">Best sellers</a>
 <a href="#cta">New arrivals</a>
-<a href="https://on-off-two.vercel.app/blog" target="_blank" rel="noopener noreferrer">Blog</a>
+<a href="#blog">Blog</a>
 </div>
 </nav>
 <main id="main-content" tabindex="-1">
@@ -626,7 +626,7 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 <div class="container" style="text-align:center;">
 <h2 id="brand-heading" class="stagger-child">Premium skincare meets internet culture.</h2>
 <p class="prose stagger-child" style="max-width:36rem;margin-left:auto;margin-right:auto;">On &amp; Off is founder-led, visually intentional, and built for the generation that reads packaging like a moodboard.</p>
-<p class="stagger-child" style="font-size:.9rem;"><a href="https://on-off-two.vercel.app/blog" target="_blank" rel="noopener noreferrer" style="color:var(--coral);font-weight:700;">Read the Journal</a> for routines, SPF without scare tactics, and launch notes.</p>
+<p class="stagger-child" id="blog" style="font-size:.9rem;scroll-margin-top:var(--scroll-header);"><a href="#blog" style="color:var(--coral);font-weight:700;">Read the Journal</a> for routines, SPF without scare tactics, and launch notes.</p>
 <div class="brand-marquee-wrap stagger-child"><div class="brand-marquee" aria-hidden="true">
 <span>Shelfie-worthy</span><span>Heat-tested</span><span>Humidity-smart</span><span>Skin-first</span><span>Scroll-worthy</span><span>Reapply-friendly</span>
 <span>Shelfie-worthy</span><span>Heat-tested</span><span>Humidity-smart</span><span>Skin-first</span><span>Scroll-worthy</span><span>Reapply-friendly</span>
@@ -662,11 +662,11 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 </div>
 <nav class="footer-col" aria-label="Shop"><p class="section-label">Shop</p><ul>
 <li><a href="#product">Hydrating SPF</a></li><li><a href="#product">Best sellers</a></li><li><a href="#cta">New arrivals</a></li>
-<li><a href="https://on-off-two.vercel.app/blog" target="_blank" rel="noopener noreferrer">Blog</a></li><li><a href="#routine">Routines &amp; kits</a></li></ul></nav>
+<li><a href="#blog">Blog</a></li><li><a href="#routine">Routines &amp; kits</a></li></ul></nav>
 <nav class="footer-col" aria-label="Explore"><p class="section-label">Explore</p><ul>
 <li><a href="#product">Hydrating SPF</a></li><li><a href="#why">Why we exist</a></li><li><a href="#formula">Formula &amp; ingredients</a></li>
 <li><a href="#texture">Texture &amp; finish</a></li><li><a href="#india">India summers</a></li>
-<li><a href="#reviews">Customer reviews</a></li><li><a href="#how">How to use</a></li><li><a href="https://on-off-two.vercel.app/blog" target="_blank" rel="noopener noreferrer">Blog</a></li></ul></nav>
+<li><a href="#reviews">Customer reviews</a></li><li><a href="#how">How to use</a></li><li><a href="#blog">Blog</a></li></ul></nav>
 <nav class="footer-col" aria-label="Help"><p class="section-label">Help</p><ul>
 <li><a href="https://on-off-two.vercel.app/track" target="_blank" rel="noopener noreferrer">Track order</a></li><li><a href="#faq">Shipping &amp; delivery</a></li><li><a href="#faq">Returns</a></li>
 <li><a href="mailto:hello@onandoff.in">Contact us</a></li></ul></nav>
@@ -730,7 +730,7 @@ else if(/why|punish|humidity|exist/.test(q)) id="why";
 else if(/india|summer|chennai|mumbai|heat/.test(q)) id="india";
 else if(/how|step|routine|use|apply/.test(q)) id="how";
 else if(/trust|safety|label/.test(q)) id="trust";
-else if(/brand|culture|journal|blog|read/.test(q)){window.open("https://on-off-two.vercel.app/blog","_blank");closeMenu();return;}
+else if(/brand|culture|journal|blog|read/.test(q)){var blogEl=document.getElementById("blog");if(blogEl)blogEl.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});closeMenu();return;}
 else if(/track|order status|parcel/.test(q)){window.open("https://on-off-two.vercel.app/track","_blank");closeMenu();return;}
 else if(/launch|access|wait|list|join|cta|signup|sign up/.test(q)) id="cta";
 var el=document.getElementById(id);
