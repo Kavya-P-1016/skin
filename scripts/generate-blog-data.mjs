@@ -33,43 +33,10 @@ const authors = [
   "Lab Notes",
 ];
 
-/** Verified Unsplash photo ids; index varies crop so URLs differ per post. */
-const photoIds = [
-  "1556228578-0d85b1a4d571",
-  "1596755389378-c31d21fd1273",
-  "1570172619644-dfd03ed5d881",
-  "1584305574647-7e4e7a1d8e0e",
-  "1522335789203-aabd1fc54bc9",
-  "1556228720-195a672e8a03",
-  "1612817288484-6f916006741a",
-  "1571875257727-256c39da42af",
-  "1620916566398-39f1143ab7be",
-  "1515377900963-9d4df4e4fc",
-  "1522338242992-e1a54906a8da",
-  "1492106087828-42f6162b2b3c",
-  "1608248543803-81bf43f80f3b",
-  "1611932699681-7a36c7cb4c38",
-  "1556228453-efd6c1ff04f6",
-  "1571019613454-1cb2f99b2d8b",
-  "1512290923902-8a9b8325cd30",
-  "1469334031218-e382a71b716b",
-  "1503341455253-b2e723bb3db5",
-  "1616394584738-fc6e612e71b9",
-  "1598440947619-c608b8a8b2c0",
-  "1556229010-6c3f2c9ca5f8",
-  "1629198688000-71f23e745b6e",
-  "1512496015851-a90fb38ba796",
-  "1571781926291-c477ebfd024b",
-  "1596755094514-f87e34085b87",
-  "1576426863842-c60c407a89b4",
-];
-
-const cropModes = ["faces", "entropy", "center", "edges"];
-const images = Array.from({ length: n }, (_, i) => {
-  const id = photoIds[i % photoIds.length];
-  const crop = cropModes[i % cropModes.length];
-  return `https://images.unsplash.com/photo-${id}?w=800&h=500&fit=crop&crop=${crop}&q=80&auto=format`;
-});
+/** Stable unique image per post via Picsum seed (avoids broken Unsplash ids). */
+function imageUrlForSlug(slug) {
+  return `https://picsum.photos/seed/${encodeURIComponent(slug)}/800/500`;
+}
 
 const alts = [
   "Skincare tubes in warm daylight",
@@ -121,6 +88,7 @@ const alts = [
   "Older skin comfortable filters",
   "Teen starter SPF habit",
   "Budget routine that works",
+  "Empty shelf and finished tubes",
 ];
 
 const TITLES = [
@@ -284,16 +252,17 @@ for (let i = 0; i < n; i++) {
   const trending = i < 12;
   const author = authors[i % authors.length];
   const dateLabel = dateLabels[i];
+  const slug = slugify(title, i);
   posts.push({
-    slug: slugify(title, i),
+    slug,
     title,
     excerpt,
     category: cat,
     trending,
     author,
     dateLabel,
-    image: images[i],
-    imageAlt: alts[i % alts.length],
+    image: imageUrlForSlug(slug),
+    imageAlt: alts[i],
     body: bodyFor(i, title, dateLabel),
   });
 }

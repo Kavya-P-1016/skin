@@ -37,7 +37,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "On & Off Editorial",
     dateLabel: "16 APR 2026",
-    image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/spf-without-the-grease-humidity-is-the-real-judge-0/800/500",
     imageAlt: "Skincare tubes in warm daylight",
     body: [
       "Published 16 APR 2026. SPF without the grease: humidity is the real judge is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -56,7 +56,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Meera Iyer",
     dateLabel: "14 APR 2026",
-    image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/glass-skin-energy-without-twelve-steps-1/800/500",
     imageAlt: "Dewy skin close-up",
     body: [
       "Published 14 APR 2026. Glass skin energy without twelve steps is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
@@ -75,7 +75,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Arjun Valecha",
     dateLabel: "12 APR 2026",
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/heatwave-routine-three-steps-that-survive-3-p-m-2/800/500",
     imageAlt: "Minimal bottles on a shelf",
     body: [
       "Published 12 APR 2026. Heatwave routine: three steps that survive 3 p.m. is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like monsoon stickiness.",
@@ -94,7 +94,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Nyra Khanna",
     dateLabel: "10 APR 2026",
-    image: "https://images.unsplash.com/photo-1584305574647-7e4e7a1d8e0e?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/humectants-filters-finish-plain-english-3/800/500",
     imageAlt: "Lab glass and droppers",
     body: [
       "Published 10 APR 2026. Humectants, filters, finish: plain English is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like high-altitude sun.",
@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Lab Notes",
     dateLabel: "08 APR 2026",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/white-cast-and-undertone-test-like-a-human-4/800/500",
     imageAlt: "Hands blending lotion",
     body: [
       "Published 08 APR 2026. White cast and undertone: test like a human is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like polluted city haze.",
@@ -132,7 +132,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "On & Off Editorial",
     dateLabel: "05 APR 2026",
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/shelfie-psychology-pretty-packaging-you-will-use-5/800/500",
     imageAlt: "Vanity shelf with cosmetics",
     body: [
       "Published 05 APR 2026. Shelfie psychology: pretty packaging you will use is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like desert heat.",
@@ -151,7 +151,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Meera Iyer",
     dateLabel: "03 APR 2026",
-    image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/niacinamide-meets-daily-spf-stacking-without-drama-6/800/500",
     imageAlt: "Product flat lay on linen",
     body: [
       "Published 03 APR 2026. Niacinamide meets daily SPF: stacking without drama is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like tropical indoors with aggressive AC.",
@@ -170,7 +170,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Arjun Valecha",
     dateLabel: "01 APR 2026",
-    image: "https://images.unsplash.com/photo-1571875257727-256c39da42af?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/ceramides-when-you-sweat-barrier-care-in-monsoon-7/800/500",
     imageAlt: "Serum bottle macro",
     body: [
       "Published 01 APR 2026. Ceramides when you sweat: barrier care in monsoon is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like temperate spring UV ramps.",
@@ -189,7 +189,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Nyra Khanna",
     dateLabel: "30 MAR 2026",
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/desk-to-cab-reapplication-social-anxiety-hacks-8/800/500",
     imageAlt: "Sunlight across bathroom tile",
     body: [
       "Published 30 MAR 2026. Desk-to-cab reapplication: social anxiety hacks is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -208,7 +208,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Lab Notes",
     dateLabel: "28 MAR 2026",
-    image: "https://images.unsplash.com/photo-1515377900963-9d4df4e4fc?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/ha-under-sunscreen-how-much-water-your-skin-wants-9/800/500",
     imageAlt: "Cream texture on skin",
     body: [
       "Published 28 MAR 2026. HA under sunscreen: how much water your skin wants is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
@@ -227,7 +227,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "On & Off Editorial",
     dateLabel: "26 MAR 2026",
-    image: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/vitamin-c-morning-oxidation-fears-vs-reality-10/800/500",
     imageAlt: "SPF and moisturizer arrangement",
     body: [
       "Published 26 MAR 2026. Vitamin C morning: oxidation fears vs reality is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like monsoon stickiness.",
@@ -246,7 +246,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: true,
     author: "Meera Iyer",
     dateLabel: "24 MAR 2026",
-    image: "https://images.unsplash.com/photo-1492106087828-42f6162b2b3c?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/zinc-myths-mineral-is-not-automatically-gentle-11/800/500",
     imageAlt: "Morning routine still life",
     body: [
       "Published 24 MAR 2026. Zinc myths: mineral is not automatically gentle is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like high-altitude sun.",
@@ -265,7 +265,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "22 MAR 2026",
-    image: "https://images.unsplash.com/photo-1608248543803-81bf43f80f3b?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/chemical-filters-names-are-scary-behavior-matters-12/800/500",
     imageAlt: "Pastel skincare packaging",
     body: [
       "Published 22 MAR 2026. Chemical filters: names are scary, behavior matters is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like polluted city haze.",
@@ -284,7 +284,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "20 MAR 2026",
-    image: "https://images.unsplash.com/photo-1611932699681-7a36c7cb4c38?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/pa-and-ppd-what-those-letters-imply-for-brown-skin-13/800/500",
     imageAlt: "Mirror and skincare jars",
     body: [
       "Published 20 MAR 2026. PA and PPD: what those letters imply for brown skin is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like desert heat.",
@@ -303,7 +303,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "18 MAR 2026",
-    image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/water-resistance-pool-day-vs-office-day-14/800/500",
     imageAlt: "Hands rinsing at sink",
     body: [
       "Published 18 MAR 2026. Water resistance: pool day vs office day is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like tropical indoors with aggressive AC.",
@@ -322,7 +322,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "15 MAR 2026",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/powder-spf-touch-ups-without-cake-face-15/800/500",
     imageAlt: "Outdoor workout and skin",
     body: [
       "Published 15 MAR 2026. Powder SPF: touch-ups without cake face is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like temperate spring UV ramps.",
@@ -341,7 +341,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "13 MAR 2026",
-    image: "https://images.unsplash.com/photo-1512290923902-8a9b8325cd30?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/stick-spf-pockets-purses-and-precision-16/800/500",
     imageAlt: "Beach hat and sunscreen",
     body: [
       "Published 13 MAR 2026. Stick SPF: pockets, purses, and precision is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -360,7 +360,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "11 MAR 2026",
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/spray-spf-where-it-helps-where-it-fails-17/800/500",
     imageAlt: "Portrait with natural skin",
     body: [
       "Published 11 MAR 2026. Spray SPF: where it helps, where it fails is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
@@ -379,7 +379,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "09 MAR 2026",
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3db5?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/makeup-first-mornings-primer-order-with-spf-18/800/500",
     imageAlt: "Travel pouch and minis",
     body: [
       "Published 09 MAR 2026. Makeup-first mornings: primer order with SPF is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like monsoon stickiness.",
@@ -398,7 +398,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "07 MAR 2026",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/tinted-spf-coverage-expectations-in-daylight-19/800/500",
     imageAlt: "Nightstand with face mist",
     body: [
       "Published 07 MAR 2026. Tinted SPF: coverage expectations in daylight is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like high-altitude sun.",
@@ -417,7 +417,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "05 MAR 2026",
-    image: "https://images.unsplash.com/photo-1598440947619-c608b8a8b2c0?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/acne-prone-comedogenic-lists-and-grain-of-salt-20/800/500",
     imageAlt: "Rooftop golden hour skincare",
     body: [
       "Published 05 MAR 2026. Acne-prone: comedogenic lists and grain of salt is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like polluted city haze.",
@@ -436,7 +436,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "03 MAR 2026",
-    image: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/retinoid-nights-spacing-so-your-face-does-not-peel-off-21/800/500",
     imageAlt: "Gym bag and face mist",
     body: [
       "Published 03 MAR 2026. Retinoid nights: spacing so your face does not peel off is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like desert heat.",
@@ -455,7 +455,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "01 MAR 2026",
-    image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/exfoliation-summer-less-is-often-more-22/800/500",
     imageAlt: "Monsoon window sill bottles",
     body: [
       "Published 01 MAR 2026. Exfoliation summer: less is often more is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like tropical indoors with aggressive AC.",
@@ -474,7 +474,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "27 FEB 2026",
-    image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/occlusives-at-night-when-petrolatum-is-your-friend-23/800/500",
     imageAlt: "Desert-dry winter skin care",
     body: [
       "Published 27 FEB 2026. Occlusives at night: when petrolatum is your friend is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like temperate spring UV ramps.",
@@ -493,7 +493,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "25 FEB 2026",
-    image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/fragrance-free-vs-unscented-label-reading101-24/800/500",
     imageAlt: "Office desk SPF reapply",
     body: [
       "Published 25 FEB 2026. Fragrance-free vs unscented: label reading101 is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -512,7 +512,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "22 FEB 2026",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b87?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/fungal-acne-chatter-stay-skeptical-stay-kind-25/800/500",
     imageAlt: "Train commute skincare",
     body: [
       "Published 22 FEB 2026. Fungal acne chatter: stay skeptical, stay kind is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
@@ -531,7 +531,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "20 FEB 2026",
-    image: "https://images.unsplash.com/photo-1576426863842-c60c407a89b4?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/slugging-debate-plastic-wrap-for-your-face-or-not-26/800/500",
     imageAlt: "Weekend farmer market glow",
     body: [
       "Published 20 FEB 2026. Slugging debate: plastic wrap for your face or not is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like monsoon stickiness.",
@@ -550,7 +550,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "18 FEB 2026",
-    image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/face-mists-cosmetic-joy-vs-real-hydration-27/800/500",
     imageAlt: "Post-swim rinse routine",
     body: [
       "Published 18 FEB 2026. Face mists: cosmetic joy vs real hydration is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like high-altitude sun.",
@@ -569,7 +569,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "16 FEB 2026",
-    image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/ice-rollers-lymphatic-hype-vs-simple-cold-28/800/500",
     imageAlt: "Flight carry-on minis",
     body: [
       "Published 16 FEB 2026. Ice rollers: lymphatic hype vs simple cold is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like polluted city haze.",
@@ -588,7 +588,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "14 FEB 2026",
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/gua-sha-daily-realistic-benefit-window-29/800/500",
     imageAlt: "College hostel sink setup",
     body: [
       "Published 14 FEB 2026. Gua sha daily: realistic benefit window is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like desert heat.",
@@ -607,7 +607,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "12 FEB 2026",
-    image: "https://images.unsplash.com/photo-1584305574647-7e4e7a1d8e0e?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/led-masks-at-home-expectations-on-a-budget-30/800/500",
     imageAlt: "Creator ring-light vanity",
     body: [
       "Published 12 FEB 2026. LED masks at home: expectations on a budget is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like tropical indoors with aggressive AC.",
@@ -626,7 +626,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "10 FEB 2026",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/dermarolling-at-home-why-we-do-not-cheerlead-31/800/500",
     imageAlt: "Parent quick morning routine",
     body: [
       "Published 10 FEB 2026. Dermarolling at home: why we do not cheerlead is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like temperate spring UV ramps.",
@@ -645,7 +645,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "08 FEB 2026",
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/supplements-for-skin-food-first-capsules-second-32/800/500",
     imageAlt: "Sensitive skin minimal shelf",
     body: [
       "Published 08 FEB 2026. Supplements for skin: food first, capsules second is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -664,7 +664,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "06 FEB 2026",
-    image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/blue-light-from-screens-sunscreen-marketing-reality-33/800/500",
     imageAlt: "Acne-prone gel textures",
     body: [
       "Published 06 FEB 2026. Blue light from screens: sunscreen marketing reality is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
@@ -683,7 +683,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "04 FEB 2026",
-    image: "https://images.unsplash.com/photo-1571875257727-256c39da42af?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/pollution-and-skin-cleanse-evidence-in-cities-34/800/500",
     imageAlt: "Deep skin tone blend test",
     body: [
       "Published 04 FEB 2026. Pollution and skin: cleanse evidence in cities is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like monsoon stickiness.",
@@ -702,7 +702,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "01 FEB 2026",
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/hard-water-and-film-chelating-shampoos-for-face-myth-35/800/500",
     imageAlt: "Fair skin burn prevention",
     body: [
       "Published 01 FEB 2026. Hard water and film: chelating shampoos for face myth is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like high-altitude sun.",
@@ -721,7 +721,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "30 JAN 2026",
-    image: "https://images.unsplash.com/photo-1515377900963-9d4df4e4fc?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/travel-minis-decant-legally-label-clearly-36/800/500",
     imageAlt: "Combination skin T-zone care",
     body: [
       "Published 30 JAN 2026. Travel minis: decant legally, label clearly is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like polluted city haze.",
@@ -740,7 +740,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "28 JAN 2026",
-    image: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/airport-security-tubes-vs-jars-vs-sticks-37/800/500",
     imageAlt: "Barrier repair night cream",
     body: [
       "Published 28 JAN 2026. Airport security: tubes vs jars vs sticks is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like desert heat.",
@@ -759,7 +759,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "26 JAN 2026",
-    image: "https://images.unsplash.com/photo-1492106087828-42f6162b2b3c?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/hostel-bathrooms-shared-sinks-and-your-towel-38/800/500",
     imageAlt: "Antioxidant morning layer",
     body: [
       "Published 26 JAN 2026. Hostel bathrooms: shared sinks and your towel is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like tropical indoors with aggressive AC.",
@@ -778,7 +778,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "24 JAN 2026",
-    image: "https://images.unsplash.com/photo-1608248543803-81bf43f80f3b?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/creator-lighting-spf-under-ring-lights-and-windows-39/800/500",
     imageAlt: "Double cleanse evening",
     body: [
       "Published 24 JAN 2026. Creator lighting: SPF under ring lights and windows is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like temperate spring UV ramps.",
@@ -797,7 +797,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "22 JAN 2026",
-    image: "https://images.unsplash.com/photo-1611932699681-7a36c7cb4c38?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/wedding-week-skin-calm-routine-beats-panic-peels-40/800/500",
     imageAlt: "Lip care with SPF",
     body: [
       "Published 22 JAN 2026. Wedding week skin: calm routine beats panic peels is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -816,7 +816,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "20 JAN 2026",
-    image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/festival-color-and-sun-barrier-before-glitter-41/800/500",
     imageAlt: "Hand cream and UV awareness",
     body: [
       "Published 20 JAN 2026. Festival color and sun: barrier before glitter is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
@@ -835,7 +835,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "18 JAN 2026",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/cricket-sunday-brim-hat-plus-reapply-rhythm-42/800/500",
     imageAlt: "Scalp and hairline SPF",
     body: [
       "Published 18 JAN 2026. Cricket Sunday: brim hat plus reapply rhythm is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like monsoon stickiness.",
@@ -854,7 +854,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "16 JAN 2026",
-    image: "https://images.unsplash.com/photo-1512290923902-8a9b8325cd30?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/hiking-spf-neck-ears-hands-you-forget-43/800/500",
     imageAlt: "Body SPF for sleeves up",
     body: [
       "Published 16 JAN 2026. Hiking SPF: neck, ears, hands you forget is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like high-altitude sun.",
@@ -873,7 +873,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "14 JAN 2026",
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/baby-steps-for-dads-new-to-spf-44/800/500",
     imageAlt: "Kids-safe family sunscreen",
     body: [
       "Published 14 JAN 2026. Baby steps for dads new to SPF is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like polluted city haze.",
@@ -892,7 +892,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "On & Off Editorial",
     dateLabel: "11 JAN 2026",
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3db5?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
+    image: "https://picsum.photos/seed/older-relatives-comfortable-textures-win-arguments-45/800/500",
     imageAlt: "Athlete sweat-resistant wear",
     body: [
       "Published 11 JAN 2026. Older relatives: comfortable textures win arguments is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like desert heat.",
@@ -911,7 +911,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Meera Iyer",
     dateLabel: "09 JAN 2026",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=500&fit=crop&crop=center&q=80&auto=format",
+    image: "https://picsum.photos/seed/teen-acne-and-spf-gel-textures-that-do-not-fight-46/800/500",
     imageAlt: "Older skin comfortable filters",
     body: [
       "Published 09 JAN 2026. Teen acne and SPF: gel textures that do not fight is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like tropical indoors with aggressive AC.",
@@ -930,7 +930,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Arjun Valecha",
     dateLabel: "07 JAN 2026",
-    image: "https://images.unsplash.com/photo-1598440947619-c608b8a8b2c0?w=800&h=500&fit=crop&crop=edges&q=80&auto=format",
+    image: "https://picsum.photos/seed/budget-fifty-rupees-a-day-drugstore-can-work-47/800/500",
     imageAlt: "Teen starter SPF habit",
     body: [
       "Published 07 JAN 2026. Budget fifty rupees a day: drugstore can work is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like temperate spring UV ramps.",
@@ -949,7 +949,7 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Nyra Khanna",
     dateLabel: "05 JAN 2026",
-    image: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=800&h=500&fit=crop&crop=faces&q=80&auto=format",
+    image: "https://picsum.photos/seed/luxury-splurge-when-texture-truly-upgrades-habit-48/800/500",
     imageAlt: "Budget routine that works",
     body: [
       "Published 05 JAN 2026. Luxury splurge: when texture truly upgrades habit is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like coastal humidity.",
@@ -968,8 +968,8 @@ export const BLOG_POSTS: BlogPost[] = [
     trending: false,
     author: "Lab Notes",
     dateLabel: "03 JAN 2026",
-    image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?w=800&h=500&fit=crop&crop=entropy&q=80&auto=format",
-    imageAlt: "Skincare tubes in warm daylight",
+    image: "https://picsum.photos/seed/year-one-habit-audit-what-you-actually-finished-49/800/500",
+    imageAlt: "Empty shelf and finished tubes",
     body: [
       "Published 03 JAN 2026. Year-one habit audit: what you actually finished is part of our Journal from January through mid-April 2026. We write for people who want protection that respects real schedules, real mirrors, and climates like dry winter air.",
       "Open with honesty: no routine works if you will not repeat it. We bias toward steps that feel reasonable on a tired Tuesday, not only on a curated Sunday. If this article clashes with your prescriber, trust the clinician who sees your skin.",
