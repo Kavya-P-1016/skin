@@ -20,6 +20,9 @@
 # production
 /build
 
+# local marketing experiment (do not commit)
+/on-off-vibrant/
+
 # misc
 .DS_Store
 *.pem

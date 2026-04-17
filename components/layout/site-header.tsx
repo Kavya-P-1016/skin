@@ -5,12 +5,9 @@ import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button";
 import type { SiteConfig } from "@/lib/site-config";
-import { catalogNav, catalogNavSimple, type NavColumn } from "@/lib/site-nav";
+import { catalogNav, catalogNavSimple } from "@/lib/site-nav";
 import { ROUTES, homeSection } from "@/lib/routes";
 import { cn } from "@/lib/cn";
-
-const navTriggerClass =
-  "whitespace-nowrap px-2 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink transition-colors hover:text-brand-deep lg:px-3 lg:text-xs";
 
 function IconTruck({ className }: { className?: string }) {
   return (
@@ -149,94 +146,6 @@ function UtilityLink({
   );
 }
 
-/**
- * Desktop flyouts: CSS-only (group-hover / group-focus-within). No React state,
- * so no hover lag or mount/unmount thrash. Panel stays in DOM.
- */
-function NavDropdown({ column }: { column: NavColumn }) {
-  if (!column.children?.length) {
-    return (
-      <a href={column.href} className={navTriggerClass}>
-        {column.label}
-      </a>
-    );
-  }
-
-  return (
-    <div className="group relative">
-      <a
-        href={column.href}
-        className={cn(navTriggerClass, "inline-flex items-center gap-0.5")}
-        aria-haspopup="menu"
-      >
-        {column.label}
-        <span className="text-[10px] text-ink-subtle" aria-hidden>
-          {"\u25BE"}
-        </span>
-      </a>
-      {/* pt-2 keeps pointer inside .group while moving from link to panel (no JS, no gap flicker) */}
-      <div
-        className="absolute left-1/2 top-full z-50 hidden min-w-[260px] -translate-x-1/2 pt-2 md:block"
-        role="menu"
-      >
-        <div
-          className={cn(
-            "max-h-[min(70vh,22rem)] overflow-y-auto overscroll-contain rounded-lg border border-border-soft bg-surface-elevated py-2 shadow-soft",
-            "opacity-0 transition-opacity duration-75 ease-out",
-            "pointer-events-none",
-            "group-hover:pointer-events-auto group-hover:opacity-100",
-            "group-focus-within:pointer-events-auto group-focus-within:opacity-100",
-          )}
-        >
-          {column.children.map((c) => (
-            <a
-              key={c.href + c.label}
-              href={c.href}
-              className="block px-4 py-2.5 text-sm text-ink-muted transition-colors hover:bg-surface-mist hover:text-ink active:bg-surface-mist"
-              role="menuitem"
-            >
-              {c.label}
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/** Thumb-friendly horizontal catalog strip (mobile / tablet below md). */
-function MobileCatalogStrip({ onNavigate }: { onNavigate?: () => void }) {
-  const items = [
-    ...catalogNav.map((c) => ({ label: c.label, href: c.href })),
-    ...catalogNavSimple,
-  ];
-
-  return (
-    <div className="border-t border-border-soft bg-surface md:hidden">
-      <div
-        className={cn(
-          "flex gap-1 overflow-x-auto overscroll-x-contain px-4 py-2.5",
-          "scroll-ps-4 scroll-pe-4 [-ms-overflow-style:none] [scrollbar-width:none]",
-          "[&::-webkit-scrollbar]:hidden",
-          "touch-pan-x",
-        )}
-        role="navigation"
-        aria-label="Shop categories"
-      >
-        {items.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            onClick={onNavigate}
-            className="shrink-0 touch-manipulation rounded-pill border border-border-soft bg-surface-elevated px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink shadow-sm active:scale-[0.98] active:bg-surface-mist"
-          >
-            {item.label}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 export function SiteHeader({ config }: { config: SiteConfig }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -301,31 +210,6 @@ export function SiteHeader({ config }: { config: SiteConfig }) {
       </div>
 
       <HeaderSearch className="mx-4 mb-3 md:hidden sm:mx-6 lg:mx-8" />
-
-      <MobileCatalogStrip onNavigate={() => setMobileOpen(false)} />
-
-      {/* Row 2: catalog nav (desktop), CSS flyouts */}
-      <div className="hidden border-t border-sky/20 bg-gradient-to-r from-wash-mint/90 via-surface-elevated to-wash-sky/80 md:block">
-        <div className="flex w-full justify-center px-4 py-2 sm:px-6 lg:px-8">
-          <nav
-            className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 lg:gap-x-4"
-            aria-label="Shop categories"
-          >
-            {catalogNav.map((col) => (
-              <NavDropdown key={col.label} column={col} />
-            ))}
-            {catalogNavSimple.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className={navTriggerClass}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </div>
 
       <div
         id="mobile-full-nav"
