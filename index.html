@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>On &amp; Off | Hydrating daily SPF for heat, humidity, and real life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+<style>
+:root{--coral:#FF6B35;--amber:#FFB347;--teal:#4ECDC4;--sunshine:#FFE66D;--blush:#FFD6CC;--sky:#D4F1F9;--mint:#D4F5EC;--peach:#FFF0E8;--dark:#1C1410;--text:#1A1A1A;--text-mid:#5C5C5C;--white:#FFFFFF;--border-warm:#FFD6CC;--cta-hover:#E5522A;--font-display:"Clash Display","Plus Jakarta Sans",system-ui,sans-serif;--font-body:"DM Sans",system-ui,sans-serif;--font-ui:"Inter",system-ui,sans-serif;--ease-spring:cubic-bezier(0.34,1.56,0.64,1);--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);--bg-primary:var(--white);--brand-coral:var(--coral);--brand-amber:var(--amber);--brand-teal:var(--teal);--text-primary:var(--text);--text-secondary:var(--text-mid);--text-light:var(--text-mid);--bg-dark:var(--dark);--bg-warm:var(--peach);--bg-cream:var(--peach);--bg-teal-tint:var(--sky)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.announcement-marquee,.ticker-track,.brand-marquee{animation:none!important}}
+body{margin:0;font-family:var(--font-body);font-size:max(1rem,.9rem);line-height:1.75;color:var(--text);background:var(--white);overflow-x:hidden}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+h1{font-size:clamp(2.8rem,7vw,5.5rem);font-weight:700;letter-spacing:-.02em;line-height:1.05;margin:0 0 1rem}
+h2{font-size:clamp(2rem,4.5vw,3.8rem);font-weight:700;letter-spacing:-.02em;line-height:1.12;margin:0 0 1rem}
+h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
+.section-label,.eyebrow{display:inline-block;font-family:var(--font-ui);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--white);background:var(--coral);padding:.45rem .85rem;border-radius:999px;margin:0 0 1rem;box-shadow:0 4px 14px rgba(255,107,53,.35)}
+.section--dark .section-label,.section--dark .eyebrow{background:var(--coral);color:var(--white)}
+.hl-coral-line{box-decoration-break:clone;-webkit-box-decoration-break:clone;border-bottom:3px solid var(--coral);padding-bottom:.06em}
+.hl-coral{color:var(--coral)}
+.hl-amber-underline{box-decoration-break:clone;border-bottom:4px solid var(--amber);padding-bottom:.02em}
+.why-punish{font-size:clamp(1.85rem,5.5vw,3.2rem);font-weight:800;color:var(--text);line-height:1.15}
+.container{width:100%;max-width:72rem;margin:0 auto;padding:0 1.25rem}
+@media (min-width:1024px){.container{padding:0 2rem}}
+.skip-link{position:absolute;left:1rem;top:1rem;z-index:100000;padding:.5rem 1rem;background:var(--bg-primary);border:1px solid var(--border-warm);border-radius:8px;font-family:var(--font-ui);font-size:.875rem;font-weight:600;color:var(--text-primary);text-decoration:none;transform:translateY(-150%);transition:transform .2s ease}
+.skip-link:focus{transform:translateY(0);outline:2px solid var(--coral);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--coral);z-index:99999;pointer-events:none}
+.announcement{background:var(--coral);color:#fff;overflow:hidden;font-family:var(--font-ui);font-weight:700;padding:.55rem 0;border-bottom:2px solid rgba(255,255,255,.2)}
+.announcement-static{display:none;margin:0;padding:.15rem 1rem;text-align:center;font-size:max(.9rem,.9rem);letter-spacing:.04em;line-height:1.4}
+.announcement-marquee-wrap{overflow:hidden}
+.announcement-marquee{display:flex;width:max-content;animation:announce-scroll 16s linear infinite;gap:4rem}
+.announcement-marquee span{white-space:nowrap;font-size:max(.85rem,.9rem);letter-spacing:.06em;text-transform:uppercase;padding:0 .5rem}
+@media (min-width:768px){.announcement-static{display:block}.announcement-marquee-wrap{display:none}}
+@keyframes announce-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);border-bottom:2px solid var(--blush);transition:box-shadow .3s ease,backdrop-filter .3s ease}
+.site-header.nav-scrolled{backdrop-filter:blur(12px);box-shadow:0 8px 28px rgba(255,107,53,.12)}
+.header-top{display:flex;align-items:center;gap:.75rem;padding:.75rem 0;flex-wrap:nowrap}
+.logo{flex-shrink:0;font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:var(--text-primary);text-decoration:none;letter-spacing:-.02em}
+.logo .amp{color:var(--coral)}
+.header-search{display:none;align-items:center;flex:1;min-width:0;margin:0 .75rem 0 1rem;padding:.45rem .85rem;border-radius:999px;border:2px solid var(--blush);background:var(--sky);box-shadow:0 2px 8px rgba(78,205,196,.15);transition:box-shadow .2s ease,border-color .2s ease}
+@media (min-width:768px){.header-search--desktop{display:flex}}
+.header-search--mobile{display:flex;margin:0 1.25rem .65rem}
+@media (min-width:768px){.header-search--mobile{display:none}}
+.header-search:focus-within{border-color:var(--coral);box-shadow:0 0 0 3px rgba(255,107,53,.25)}
+.header-search svg{flex-shrink:0;color:var(--teal)}
+.header-search input{flex:1;min-width:0;border:none;background:transparent;font-family:var(--font-ui);font-size:.875rem;color:var(--text-primary);outline:none;margin-left:.5rem}
+.header-search input::placeholder{color:var(--text-light)}
+.header-actions{display:flex;align-items:center;gap:.15rem;flex-shrink:0;margin-left:auto}
+.icon-btn{position:relative;display:flex;align-items:center;justify-content:center;width:48px;height:48px;min-width:48px;min-height:48px;border-radius:12px;color:var(--text);text-decoration:none;transition:background .2s ease,color .2s ease}
+.icon-btn:hover{background:var(--blush);color:var(--coral)}
+.cart-badge{position:absolute;top:2px;right:2px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:var(--coral);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.header-cta-lg{display:none}
+.header-cta-mobile{display:inline-flex;min-height:48px;padding:0 1rem;font-size:.8rem}
+@media (min-width:1024px){.header-cta-lg{display:inline-flex}.header-cta-mobile{display:none}}
+.nav-toggle{margin-left:.25rem;width:48px;height:48px;min-width:48px;min-height:48px;padding:0;border:2px solid var(--blush);border-radius:14px;background:var(--peach);cursor:pointer;display:flex;align-items:center;justify-content:center;position:relative}
+.nav-toggle-box{width:22px;height:16px;position:relative;display:block}
+.nav-toggle-line{position:absolute;left:0;right:0;height:2px;background:var(--text);border-radius:2px;transition:transform .3s ease,top .3s ease,opacity .2s ease}
+.nav-toggle-line:nth-child(1){top:0}
+.nav-toggle-line:nth-child(2){top:7px}
+.nav-toggle-line:nth-child(3){top:14px}
+.nav-toggle[aria-expanded="true"] .nav-toggle-line:nth-child(1){top:7px;transform:rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .nav-toggle-line:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .nav-toggle-line:nth-child(3){top:7px;transform:rotate(-45deg)}
+@media (min-width:768px){.nav-toggle{display:none}}
+.nav-pills-strip{border-top:2px solid var(--blush);background:linear-gradient(90deg,var(--mint),var(--sky));display:block}
+@media (min-width:768px){.nav-pills-strip{display:none}}
+.nav-pills{display:flex;gap:.35rem;overflow-x:auto;padding:.55rem 1.25rem;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.nav-pills::-webkit-scrollbar{display:none}
+.nav-pill{flex-shrink:0;touch-manipulation;border-radius:999px;border:2px solid rgba(255,255,255,.8);background:var(--white);padding:.5rem .8rem;font-family:var(--font-ui);font-size:.625rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text);text-decoration:none;box-shadow:0 2px 8px rgba(255,107,53,.12)}
+.nav-mega-wrap{display:none;border-top:2px solid var(--blush);background:linear-gradient(90deg,var(--sunshine),var(--white),var(--blush))}
+@media (min-width:768px){.nav-mega-wrap{display:block}}
+.nav-mega{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.25rem .5rem;padding:.45rem 0}
+.nav-mega-group{position:relative}
+.nav-mega-trigger{font-family:var(--font-ui);font-size:.6875rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-primary);text-decoration:none;padding:.5rem .6rem;display:inline-flex;align-items:center;gap:.2rem;position:relative}
+.nav-mega-trigger::after{content:"";position:absolute;left:.6rem;right:.6rem;bottom:2px;height:2px;background:var(--coral);width:0;margin:0 auto;transition:width .3s ease}
+.nav-mega-group:hover .nav-mega-trigger::after{width:calc(100% - 1.2rem)}
+.caret{font-size:.625rem;color:var(--coral)}
+.nav-mega-panel{position:absolute;left:50%;top:100%;transform:translateX(-50%);padding-top:.35rem;min-width:260px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,visibility .2s ease;z-index:50}
+.nav-mega-group:hover .nav-mega-panel,.nav-mega-group:focus-within .nav-mega-panel{opacity:1;visibility:visible;pointer-events:auto}
+.nav-mega-panel-inner{background:var(--white);border:2px solid var(--blush);border-radius:16px;box-shadow:0 16px 48px rgba(255,107,53,.18);padding:.35rem 0;max-height:min(70vh,22rem);overflow-y:auto}
+.nav-mega-panel-inner a{display:block;padding:.65rem 1rem;font-size:.875rem;color:var(--text-mid);text-decoration:none;transition:background .15s ease,color .15s ease}
+.nav-mega-panel-inner a:hover{background:var(--peach);color:var(--coral)}
+.nav-mega-plain{font-family:var(--font-ui);font-size:.6875rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-primary);text-decoration:none;padding:.5rem .65rem;position:relative}
+.nav-mega-plain::after{content:"";position:absolute;left:.65rem;right:.65rem;bottom:2px;height:2px;background:var(--coral);width:0;margin:0 auto;transition:width .3s ease}
+.nav-mega-plain:hover::after{width:calc(100% - 1.3rem)}
+.mobile-panel{position:fixed;inset:0;left:auto;width:100%;max-width:100%;background:var(--dark);z-index:2000;padding:max(1.25rem,env(safe-area-inset-top)) 1.35rem 2rem;transform:translateX(100%);opacity:0;visibility:hidden;transition:transform .3s ease,opacity .3s ease,visibility .3s;box-shadow:-8px 0 0 rgba(255,107,53,.15);overflow-y:auto}
+.mobile-panel.open{transform:translateX(0);opacity:1;visibility:visible}
+.mobile-panel .btn-primary{width:100%;margin-bottom:1rem;min-height:52px}
+.mobile-nav-block{border-bottom:1px solid rgba(255,255,255,.12);padding:.85rem 0}
+.mobile-nav-head{font-family:var(--font-display);font-size:.95rem;font-weight:600;color:#fff;text-decoration:none;display:flex;min-height:3rem;align-items:center}
+.mobile-nav-sub{list-style:none;margin:.35rem 0 0;padding:0 0 0 .75rem;border-left:3px solid var(--coral)}
+.mobile-nav-sub a{display:flex;min-height:3rem;align-items:center;font-size:.9rem;color:rgba(255,255,255,.85);text-decoration:none;transition:color .2s ease,transform .2s ease}
+.mobile-nav-sub a:hover{color:var(--coral);transform:translateX(4px)}
+.mobile-nav-chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:1rem 0}
+.mobile-nav-chips a{min-height:48px;border-radius:999px;border:2px solid var(--coral);background:transparent;padding:0 1.1rem;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-decoration:none;display:inline-flex;align-items:center}
+.mobile-nav-chips a:hover{background:var(--coral);color:#fff}
+.mobile-backdrop{position:fixed;inset:0;background:rgba(28,20,16,.55);z-index:1999;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s}
+.mobile-backdrop.show{opacity:1;visibility:visible}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-ui);font-weight:600;font-size:.875rem;padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;border:none;cursor:pointer;position:relative;overflow:hidden;transition:transform .25s var(--ease-spring),box-shadow .25s ease,background .25s ease,color .25s ease}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 4px 20px rgba(255,107,53,.4);min-height:48px}
+.btn-primary:hover{transform:scale(1.04);box-shadow:0 8px 28px rgba(255,107,53,.45);background:var(--cta-hover)}
+.btn-primary:active{transform:scale(.97)}
+.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-100%);transition:transform .5s ease}
+.btn-primary:hover::after{transform:translateX(100%)}
+.btn-ghost{background:transparent;color:var(--text-primary);border:2px solid var(--border-warm);box-shadow:none;isolation:isolate}
+.btn-ghost::before{content:"";position:absolute;inset:0;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .3s ease;z-index:-1;border-radius:999px}
+.btn-ghost:hover{color:#fff;border-color:var(--coral)}
+.btn-ghost:hover::before{transform:scaleX(1)}
+.btn-ghost span{position:relative;z-index:1}
+.hero{position:relative;padding:clamp(3rem,8vw,5rem) 0 clamp(3.5rem,10vw,5.5rem);background:linear-gradient(165deg,#fff 0%,var(--blush) 42%,var(--peach) 100%);overflow:hidden}
+.hero::before{content:"";position:absolute;top:-20%;right:-10%;width:min(90vw,420px);height:min(90vw,420px);background:radial-gradient(circle,rgba(255,107,53,.25) 0%,transparent 68%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-15%;left:-15%;width:min(80vw,360px);height:min(80vw,360px);background:radial-gradient(circle,rgba(78,205,196,.22) 0%,transparent 65%);pointer-events:none}
+#hero-cursor-glow{position:absolute;width:350px;height:350px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(255,107,53,.07) 0%,transparent 70%);transform:translate(-50%,-50%);z-index:0;opacity:0;transition:opacity .3s ease}
+@media (max-width:899px){#hero-cursor-glow{display:none}}
+.hero .container{position:relative;z-index:1}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:1024px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:3rem}}
+.word-reveal-wrap{display:inline}
+.word-reveal{display:inline-block;opacity:0;transform:translateY(24px)}
+.word-reveal.show{opacity:1;transform:translateY(0);transition:opacity .45s var(--ease-soft),transform .45s var(--ease-soft)}
+.hero-lead{font-size:max(1.05rem,.95rem);color:var(--text-mid);max-width:36rem;margin:0 0 1.75rem;font-weight:500}
+.hero-ctas{display:flex;flex-direction:column;width:100%;gap:.75rem;margin-bottom:1.5rem}
+@media (min-width:640px){.hero-ctas{flex-direction:row;flex-wrap:wrap;width:auto}}
+.hero-ctas .btn{width:100%}
+@media (min-width:640px){.hero-ctas .btn{width:auto}}
+.hero-pills{display:flex;flex-wrap:wrap;gap:.5rem .65rem;padding:0;margin:0;list-style:none}
+.hero-pill{font-family:var(--font-body);font-size:max(.9rem,.9rem);font-weight:600;padding:.4rem 1rem;border-radius:999px;background:var(--white);border:2px solid var(--amber);color:var(--text-mid);box-shadow:0 4px 12px rgba(255,179,71,.2)}
+.hero-pill--lead{font-weight:700;color:var(--text);border-color:var(--coral);background:linear-gradient(135deg,#fff,var(--blush))}
+.product-visual-wrap{display:flex;justify-content:center;position:relative;width:100%}
+.product-card{position:relative;width:80%;max-width:260px;aspect-ratio:3/5;border-radius:2rem;background:linear-gradient(180deg,#fff 0%,var(--peach) 45%,var(--sky) 100%);border:3px solid var(--blush);box-shadow:0 28px 64px rgba(255,107,53,.22),0 8px 24px rgba(78,205,196,.15);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem;animation:product-float 6s ease-in-out infinite}
+@media (min-width:640px){.product-card{width:min(240px,100%)}}
+.product-card:hover{animation-play-state:paused;transform:scale(1.03);box-shadow:0 36px 80px rgba(255,107,53,.28),0 12px 32px rgba(28,20,16,.1)}
+@keyframes product-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.product-card::before{content:"";position:absolute;inset:-22%;background:radial-gradient(circle,rgba(255,107,53,.2) 0%,transparent 65%);filter:blur(36px);z-index:-1;pointer-events:none}
+.product-card .brand-small{font-family:var(--font-ui);font-size:.65rem;letter-spacing:.35em;text-transform:uppercase;color:var(--coral);font-weight:700}
+.product-card .product-title{font-family:var(--font-display);font-size:1.35rem;font-weight:700;margin:.5rem 0;line-height:1.2;color:var(--text)}
+.product-card .product-note{font-size:max(.8rem,.8rem);color:var(--text-mid);font-weight:600}
+.trust-ticker{background:var(--coral);color:#fff;overflow:hidden;padding:.7rem 0;font-family:var(--font-ui);font-weight:700}
+.trust-ticker .ticker-track span{font-size:max(.85rem,.88rem);letter-spacing:.08em}
+.trust-ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track{display:flex;width:max-content;animation:ticker 28s linear infinite}
+.ticker-track span{padding:0 2.5rem;white-space:nowrap}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.section{padding:clamp(3rem,6vw,5rem) 0;scroll-margin-top:5rem}
+.section.reveal-section{opacity:0;transform:translateY(32px)}
+.section.reveal-section.is-visible{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease-soft),transform .6s var(--ease-soft)}
+.section.reveal-section.is-visible .stagger-child{opacity:1;transform:translateY(0)}
+.stagger-child{opacity:0;transform:translateY(24px);transition:opacity .5s var(--ease-soft),transform .5s var(--ease-soft)}
+.bg-blush{background:var(--blush)}.bg-sky{background:var(--sky)}.bg-peach{background:var(--peach)}.bg-mint{background:var(--mint)}.bg-sunshine{background:var(--sunshine)}
+.bg-finish{background:var(--white);position:relative}
+.bg-finish::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 100% 0%,rgba(255,179,71,.18),transparent 55%),radial-gradient(ellipse 60% 40% at 0% 100%,rgba(255,214,204,.35),transparent 50%);pointer-events:none;z-index:0}
+.bg-finish .container{position:relative;z-index:1}
+.bg-cream{background:var(--peach)}.bg-warm{background:var(--peach)}.bg-teal-tint{background:var(--sky)}.bg-white{background:var(--white)}
+.section--coral{background:var(--coral);color:#fff}
+.section--coral h2,.section--coral h3{color:#fff}
+.section--coral .prose p{color:rgba(255,255,255,.92)}
+.section--coral .section-label{background:#fff;color:var(--coral)}
+.section--dark{background:var(--dark);color:rgba(255,255,255,.92)}
+.section--dark h2,.section--dark h3{color:#fff}
+.section--dark .prose p{color:rgba(255,255,255,.85)}
+.section--dark a{color:var(--coral)}
+.prose p{margin:0 0 1rem;color:var(--text-mid);font-size:max(1rem,.95rem)}.prose strong{color:var(--text)}
+.feature-grid{display:grid;gap:1.25rem}
+@media (min-width:640px){.feature-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.feature-grid{grid-template-columns:repeat(4,1fr)}}
+.feature-card{background:var(--white);border:2px solid var(--blush);border-radius:20px;padding:1.5rem;border-left:0 solid transparent;transition:transform .3s var(--ease-soft),box-shadow .3s var(--ease-soft),border-left-width .3s ease,background .3s ease,border-color .3s ease;position:relative;box-shadow:0 6px 20px rgba(255,107,53,.08)}
+.feature-card .feat-icon{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--sunshine),var(--amber));margin-bottom:1rem;transition:transform .3s var(--ease-soft);border:2px solid var(--coral)}
+.feature-card:hover{transform:translateY(-8px);box-shadow:0 20px 48px rgba(255,107,53,.18);border-left-width:4px;border-left-color:var(--coral);background:var(--peach);border-color:var(--amber)}
+.feature-card:hover .feat-icon{transform:rotate(5deg) scale(1.1)}
+.spec-grid{display:grid;gap:1rem}
+@media (min-width:640px){.spec-grid{grid-template-columns:repeat(2,1fr)}}
+.spec-block{background:var(--white);border:2px solid var(--teal);border-radius:18px;padding:1.35rem;box-shadow:0 8px 24px rgba(78,205,196,.15)}
+.spec-block dt{font-family:var(--font-ui);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--coral);margin-bottom:.35rem}
+.spec-block dd{margin:0;font-weight:700;color:var(--text);font-size:max(.95rem,.95rem)}
+.formula-visual{border-radius:20px;border:3px solid var(--amber);background:linear-gradient(135deg,var(--sunshine),var(--blush),var(--sky));min-height:280px;display:flex;align-items:flex-end;padding:1.25rem;box-shadow:0 12px 32px rgba(255,179,71,.2)}
+.formula-visual p{margin:0;font-size:max(.95rem,.95rem);color:var(--text-mid);font-weight:500}
+.india-section{background:var(--blush);color:var(--text)}
+.india-section h2,.india-section h3{color:var(--text)}
+.india-section .prose p{color:var(--text-mid)}
+.india-grid{display:grid;gap:1rem}
+@media (min-width:900px){.india-grid{grid-template-columns:repeat(3,1fr)}}
+.india-card{background:var(--white);border:3px solid var(--coral);border-radius:20px;padding:1.35rem;box-shadow:0 10px 28px rgba(255,107,53,.15)}
+.india-card h3{color:var(--coral)}
+.india-card .prose{color:var(--text-mid)!important}
+.trust-block{border-radius:24px;padding:2rem;border:3px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);backdrop-filter:blur(8px)}
+.trust-block h2{color:#fff}
+.trust-block .prose p{color:rgba(255,255,255,.95)!important}
+.trust-block ul{margin:1rem 0 0;padding-left:1.2rem;color:rgba(255,255,255,.9)}
+.trust-block li::marker{color:var(--sunshine)}
+.testimonial-row{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem;-webkit-overflow-scrolling:touch}
+@media (min-width:900px){.testimonial-row{display:grid;grid-template-columns:repeat(2,1fr);overflow:visible}}
+@media (min-width:1200px){.testimonial-row{grid-template-columns:repeat(3,1fr)}}
+.testimonial-card{scroll-snap-align:center;min-width:min(340px,88vw);scroll-snap-stop:always}
+@media (min-width:900px){.testimonial-card{min-width:0}}
+.testimonial-inner{background:linear-gradient(145deg,#fff,var(--peach));border:2px solid var(--blush);border-left:4px solid var(--coral);border-radius:18px;padding:1.35rem;display:flex;gap:1rem;height:100%;transition:transform .3s var(--ease-soft),box-shadow .3s ease,border-color .3s ease;box-shadow:0 6px 20px rgba(78,205,196,.12)}
+@media (min-width:900px){.testimonial-card:hover .testimonial-inner{transform:translateY(-6px);box-shadow:0 16px 40px rgba(255,107,53,.2);border-left-color:var(--amber)}.testimonial-card:hover .qm{transform:scale(1.2)}}
+.testimonial-avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(255,107,53,.25)}
+.testimonial-quote{margin:0;font-size:max(.95rem,.95rem);color:var(--text);line-height:1.55;font-weight:500}
+.qm{color:var(--coral);font-weight:800;display:inline-block;transition:transform .3s var(--ease-soft)}
+.testimonial-foot{margin-top:.75rem;font-size:max(.8rem,.8rem)}
+.testimonial-foot strong{display:block;color:var(--text)}
+.testimonial-meta{display:block;color:var(--text-mid);font-weight:500;margin-top:.2rem}
+.steps-grid{display:grid;gap:1.25rem}
+@media (min-width:900px){.steps-grid{grid-template-columns:repeat(3,1fr)}}
+.step-card{background:var(--white);border:3px solid var(--coral);border-radius:20px;padding:1.5rem;box-shadow:0 8px 24px rgba(255,107,53,.12)}
+.step-num{font-family:var(--font-display);font-size:4rem;font-weight:800;color:var(--coral);line-height:1;transition:transform .25s ease,color .25s ease;text-shadow:2px 2px 0 var(--amber)}
+@media (min-width:900px){.step-num{font-size:3rem}}
+.step-card:hover .step-num{transform:scale(1.25);color:var(--cta-hover)}
+.kit-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.kit-chip{font-family:var(--font-ui);font-size:max(.8rem,.8rem);font-weight:700;padding:.55rem 1.1rem;border-radius:999px;border:2px solid var(--coral);background:var(--white);color:var(--text)}
+.kit-card{border-radius:22px;border:3px solid var(--teal);background:linear-gradient(145deg,var(--sky),#fff);padding:2rem;margin-top:1.5rem;box-shadow:0 12px 32px rgba(78,205,196,.2)}
+.brand-marquee-wrap{overflow:hidden;margin-top:2rem}
+.brand-marquee{display:flex;width:max-content;animation:ticker 24s linear infinite;font-family:var(--font-ui);font-size:.75rem;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.brand-marquee span{padding:0 2rem}
+.brand-marquee span::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--coral);margin-left:2rem;vertical-align:middle}
+.faq-item{border-bottom:2px solid var(--blush)}
+.faq-item:first-of-type{border-top:2px solid var(--blush)}
+.faq-q{width:100%;text-align:left;padding:1.1rem 0;font-family:var(--font-body);font-size:1rem;font-weight:600;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;color:var(--text-primary)}
+.faq-icon{width:28px;height:28px;border-radius:8px;border:1px solid var(--border-warm);display:flex;align-items:center;justify-content:center;font-size:1.25rem;line-height:1;transition:transform .35s var(--ease-soft),border-color .25s ease,color .25s ease;flex-shrink:0}
+.faq-item.open .faq-icon{transform:rotate(45deg);border-color:var(--coral);color:var(--coral)}
+.faq-item.open .faq-q{color:var(--coral)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(0.25,0.46,0.45,0.94)}
+.faq-item.open .faq-a{max-height:320px}
+.faq-a-inner{padding-bottom:1.1rem;color:var(--text-secondary);font-size:.95rem;opacity:0;transform:translateY(8px);transition:opacity .35s ease .05s,transform .35s ease .05s}
+.faq-item.open .faq-a-inner{opacity:1;transform:translateY(0)}
+.final-cta{background:linear-gradient(135deg,var(--coral),var(--amber));color:#fff;text-align:center;position:relative;overflow:hidden}
+.final-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(255,230,109,.25),transparent 45%);pointer-events:none}
+.final-cta .container{position:relative;z-index:1}
+.final-cta h2{color:#fff;font-size:clamp(1.85rem,5vw,3.2rem)}
+.final-cta .prose p{color:rgba(255,255,255,.95)}
+.email-form{display:flex;flex-direction:column;gap:.75rem;max-width:28rem;margin:1.5rem auto 0;width:100%}
+@media (min-width:500px){.email-form{flex-direction:row;align-items:stretch;max-width:32rem}}
+.email-form input{flex:1;min-height:48px;border-radius:999px;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.15);color:#fff;padding:0 1.25rem;font-family:var(--font-ui);font-size:.9rem;outline:none;transition:box-shadow .2s ease,border-color .2s ease}
+.email-form input::placeholder{color:rgba(255,255,255,.7)}
+.email-form input:focus{border-color:#fff;box-shadow:0 0 0 3px rgba(255,107,53,.35)}
+.email-form--surface input{border:1px solid var(--border-warm);background:var(--bg-primary);color:var(--text-primary);box-shadow:0 1px 3px rgba(28,20,16,.06)}
+.email-form--surface input::placeholder{color:var(--text-light)}
+.email-form--surface input:focus{border-color:var(--coral);box-shadow:0 0 0 3px rgba(255,107,53,.2)}
+.email-form--surface .btn-primary{box-shadow:0 4px 16px rgba(255,107,53,.25)}
+.footer-dark{background:var(--dark);color:rgba(255,255,255,.88);padding:3rem 0 2rem;border-top:4px solid var(--coral)}
+.footer-dark a{color:rgba(255,255,255,.8);text-decoration:none;transition:transform .2s ease,color .2s ease;display:inline-block}
+.footer-dark a:hover{color:var(--coral);transform:translateX(4px)}
+.footer-dark .section-label{background:transparent;color:var(--amber);padding:0;box-shadow:none;letter-spacing:.2em}
+.footer-grid{display:grid;gap:2rem}
+@media (min-width:900px){.footer-grid{grid-template-columns:1.2fr repeat(4,1fr)}}
+.footer-brand p{font-size:.875rem;line-height:1.6;color:rgba(255,255,255,.7)}
+.footer-brand .logo{color:#fff}
+.footer-col ul{list-style:none;padding:0;margin:.75rem 0 0}
+.footer-col li{margin-bottom:.5rem}
+.footer-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padding-top:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.footer-email input{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff}
+.footer-email input:focus{box-shadow:0 0 0 3px rgba(255,107,53,.25);border-color:var(--coral)}
+.accordion-item{border:2px solid var(--blush);border-radius:18px;margin-bottom:.85rem;overflow:hidden;background:var(--white);box-shadow:0 4px 16px rgba(255,107,53,.06)}
+.accordion-btn{width:100%;text-align:left;padding:1.1rem 1.25rem;font-family:var(--font-body);font-weight:700;font-size:1.05rem;background:var(--peach);border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--text);transition:background .25s ease,color .25s ease}
+.accordion-item.open{border-color:var(--coral);box-shadow:0 8px 24px rgba(255,107,53,.15)}
+.accordion-item.open .accordion-btn{background:var(--mint);color:var(--coral)}
+.accordion-panel{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(0.25,0.46,0.45,0.94)}
+.accordion-item.open .accordion-panel{max-height:480px}
+.accordion-panel-inner{padding:0 1.25rem 1.1rem;color:var(--text-secondary);font-size:.95rem}
+.two-col{display:grid;gap:2rem}
+@media (min-width:900px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
+.faq-section{border-top:4px solid var(--coral);background:linear-gradient(180deg,#fff 0%,var(--peach) 100%)}
+.formula-section{background:linear-gradient(175deg,var(--mint) 0%,var(--sky) 55%,var(--mint) 100%)!important}
+.testimonial-row{padding:0 .25rem 1rem;scroll-padding-inline:1rem}
+.email-form .btn-primary{width:100%}
+@media (min-width:500px){.email-form .btn-primary{width:auto}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="scroll-progress" aria-hidden="true"></div>
+<div class="announcement"><p class="announcement-static">Launching soon. Join for early access and founder-only perks.</p><div class="announcement-marquee-wrap" aria-hidden="true"><div class="announcement-marquee"><span>Launching soon. Join for early access and founder-only perks.</span><span>Launching soon. Join for early access and founder-only perks.</span><span>Launching soon. Join for early access and founder-only perks.</span><span>Launching soon. Join for early access and founder-only perks.</span></div></div></div>
+<header class="site-header" id="site-header">
+<div class="container header-top">
+<a class="logo" href="/">ON <span class="amp">&amp;</span> OFF</a>
+<form class="header-search header-search--desktop" role="search" action="/" method="get">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+<label for="site-search-desktop" class="sr-only">Search products and topics</label>
+<input id="site-search-desktop" type="search" name="q" autocomplete="off" placeholder="Search SPF, ingredients, skin concerns…" />
+</form>
+<div class="header-actions">
+<a href="/track" class="icon-btn" aria-label="Track order"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></a>
+<a href="/cart" class="icon-btn" aria-label="Shopping bag"><span style="position:relative;display:inline-flex"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-badge">0</span></span></a>
+<a href="/#cta" class="icon-btn" aria-label="Account"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+<a class="btn btn-primary header-cta-mobile" href="/#cta">Get launch access</a>
+<a class="btn btn-primary header-cta-lg" href="/#cta">Get launch access</a>
+<button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-panel"><span class="nav-toggle-box" aria-hidden="true"><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span></span><span class="sr-only">Menu</span></button>
+</div>
+</div>
+<form class="header-search header-search--mobile" role="search" action="/" method="get">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+<label for="site-search-mobile" class="sr-only">Search products and topics</label>
+<input id="site-search-mobile" type="search" name="q" autocomplete="off" placeholder="Search SPF, ingredients, skin concerns…" />
+</form>
+<div class="nav-pills-strip" aria-label="Shop categories">
+<div class="nav-pills">
+<a class="nav-pill" href="/#product">Shop all</a>
+<a class="nav-pill" href="/#why">Skin concern</a>
+<a class="nav-pill" href="/#formula">Ingredients</a>
+<a class="nav-pill" href="/#benefits">Skin type</a>
+<a class="nav-pill" href="/#product">Best sellers</a>
+<a class="nav-pill" href="/#cta">New arrivals</a>
+<a class="nav-pill" href="/blog">Blog</a>
+</div>
+</div>
+<div class="nav-mega-wrap">
+<nav class="container nav-mega" aria-label="Shop categories">
+<div class="nav-mega-group">
+<a class="nav-mega-trigger" href="/#product" aria-haspopup="true">Shop all <span class="caret" aria-hidden="true">&#9662;</span></a>
+<div class="nav-mega-panel" role="menu"><div class="nav-mega-panel-inner">
+<a href="/#product" role="menuitem">Hydrating SPF (hero)</a>
+<a href="/#routine" role="menuitem">Routines &amp; kits</a>
+<a href="/#how" role="menuitem">How to use</a>
+</div></div>
+</div>
+<div class="nav-mega-group">
+<a class="nav-mega-trigger" href="/#why" aria-haspopup="true">Skin concern <span class="caret" aria-hidden="true">&#9662;</span></a>
+<div class="nav-mega-panel" role="menu"><div class="nav-mega-panel-inner">
+<a href="/#india" role="menuitem">Heat &amp; humidity</a>
+<a href="/#texture" role="menuitem">Texture &amp; finish</a>
+<a href="/#trust" role="menuitem">Trust &amp; safety</a>
+</div></div>
+</div>
+<div class="nav-mega-group">
+<a class="nav-mega-trigger" href="/#formula" aria-haspopup="true">Ingredients <span class="caret" aria-hidden="true">&#9662;</span></a>
+<div class="nav-mega-panel" role="menu"><div class="nav-mega-panel-inner">
+<a href="/#formula" role="menuitem">Formula philosophy</a>
+<a href="/#benefits" role="menuitem">Benefits overview</a>
+<a href="/#faq" role="menuitem">FAQ</a>
+</div></div>
+</div>
+<div class="nav-mega-group">
+<a class="nav-mega-trigger" href="/#benefits" aria-haspopup="true">Skin type <span class="caret" aria-hidden="true">&#9662;</span></a>
+<div class="nav-mega-panel" role="menu"><div class="nav-mega-panel-inner">
+<a href="/#benefits" role="menuitem">Oily / combo / acne-prone</a>
+<a href="/#texture" role="menuitem">Daily wear comfort</a>
+<a href="/reviews" role="menuitem">Reviews</a>
+</div></div>
+</div>
+<a class="nav-mega-plain" href="/#product">Best sellers</a>
+<a class="nav-mega-plain" href="/#cta">New arrivals</a>
+<a class="nav-mega-plain" href="/blog">Blog</a>
+</nav>
+</div>
+</header>
+<div class="mobile-backdrop" id="mobile-backdrop"></div>
+<nav class="mobile-panel" id="mobile-panel" aria-label="Mobile navigation">
+<a class="btn btn-primary" href="/#cta">Get launch access</a>
+<div class="mobile-nav-block">
+<a class="mobile-nav-head" href="/#product">Shop all</a>
+<ul class="mobile-nav-sub">
+<li><a href="/#product">Hydrating SPF (hero)</a></li>
+<li><a href="/#routine">Routines &amp; kits</a></li>
+<li><a href="/#how">How to use</a></li>
+</ul>
+</div>
+<div class="mobile-nav-block">
+<a class="mobile-nav-head" href="/#why">Skin concern</a>
+<ul class="mobile-nav-sub">
+<li><a href="/#india">Heat &amp; humidity</a></li>
+<li><a href="/#texture">Texture &amp; finish</a></li>
+<li><a href="/#trust">Trust &amp; safety</a></li>
+</ul>
+</div>
+<div class="mobile-nav-block">
+<a class="mobile-nav-head" href="/#formula">Ingredients</a>
+<ul class="mobile-nav-sub">
+<li><a href="/#formula">Formula philosophy</a></li>
+<li><a href="/#benefits">Benefits overview</a></li>
+<li><a href="/#faq">FAQ</a></li>
+</ul>
+</div>
+<div class="mobile-nav-block">
+<a class="mobile-nav-head" href="/#benefits">Skin type</a>
+<ul class="mobile-nav-sub">
+<li><a href="/#benefits">Oily / combo / acne-prone</a></li>
+<li><a href="/#texture">Daily wear comfort</a></li>
+<li><a href="/reviews">Reviews</a></li>
+</ul>
+</div>
+<div class="mobile-nav-chips">
+<a href="/#product">Best sellers</a>
+<a href="/#cta">New arrivals</a>
+<a href="/blog">Blog</a>
+</div>
+</nav>
+<main id="main-content" tabindex="-1">
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+<div id="hero-cursor-glow" aria-hidden="true"></div>
+<div class="container hero-grid">
+<div>
+<p class="section-label">New-gen daily SPF</p>
+<h1 id="hero-heading"><span class="word-reveal">Hydration</span> <span class="word-reveal">that</span> <span class="hl-coral-line word-reveal-wrap"><span class="word-reveal">doesn&#8217;t</span> <span class="word-reveal">sit</span> <span class="word-reveal">heavy.</span></span></h1>
+<p class="hero-lead">Daily SPF that feels like skin, not sunscreen. Lightweight finish for oily, combination, and acne-prone skin, tuned for Indian heat and humidity.</p>
+<div class="hero-ctas">
+<a class="btn btn-primary" href="/#cta">Get launch access</a>
+<a class="btn btn-ghost" href="/#product"><span>See the hero product</span></a>
+</div>
+<ul class="hero-pills">
+<li><span class="hero-pill hero-pill--lead">Non-greasy texture</span></li>
+<li><span class="hero-pill">Sheer, skin-like finish</span></li>
+<li><span class="hero-pill">Reel-ready packaging</span></li>
+</ul>
+</div>
+<div class="product-visual-wrap">
+<div class="product-card" id="product-card">
+<span class="brand-small">On &amp; Off</span>
+<p class="product-title">Hydrating<br />SPF</p>
+<p class="product-note">Daily · Lightweight · No white cast*</p>
+</div>
+</div>
+<p style="grid-column:1/-1;text-align:center;font-size:max(.75rem,.75rem);color:var(--text-mid);margin:0;font-weight:500;">*Finish varies by skin tone. Designed for a sheer, skin-like look.</p>
+</div>
+</section>
+<div class="trust-ticker" aria-label="Trust">
+<div class="ticker-track">
+<span>Dermatologist-guided development</span>
+<span>Humidity-tested wear</span>
+<span>No sticky-film finish</span>
+<span>Made for everyday reapplication</span>
+<span>Dermatologist-guided development</span>
+<span>Humidity-tested wear</span>
+<span>No sticky-film finish</span>
+<span>Made for everyday reapplication</span>
+</div>
+</div>
+<section class="section bg-blush reveal-section" id="why" aria-labelledby="why-heading">
+<div class="container two-col stagger-wrap">
+<h2 id="why-heading" class="stagger-child why-punish">Sunscreen shouldn&#8217;t feel like a <span class="hl-amber-underline">punishment</span>.</h2>
+<div class="prose stagger-child">
+<p>Most SPF is either thick and cast-heavy, or so &quot;matte&quot; it leaves skin feeling tight. In Indian summers, the real enemy is texture: sweat, humidity, and that greasy film that makes you want to skip reapplication.</p>
+<p><strong>On &amp; Off exists for the in-between:</strong> premium skin feel, clear benefits, and a finish you&apos;d happily wear under makeup, or on bare skin for the group photo.</p>
+</div>
+</div>
+</section>
+<section class="section bg-sky reveal-section" id="product" aria-labelledby="product-heading">
+<div class="container">
+<div class="two-col">
+<div class="stagger-child">
+<p class="section-label">Hero product</p>
+<h2 id="product-heading">On &amp; Off Hydrating SPF</h2>
+<p class="prose" style="font-size:1.1rem;color:var(--text-secondary);">The daily essential you&apos;ll actually want to wear.</p>
+<ul class="prose" style="padding-left:1.2rem;">
+<li>Hydrating base: comfort-first, not chalky-dry</li>
+<li>Weightless wear for oily / combination / acne-prone skin</li>
+<li>Designed for daily reapplication in heat + humidity</li>
+<li>Shelfie-worthy packaging you&apos;ll actually want on your vanity</li>
+</ul>
+<p style="font-size:.8rem;color:var(--text-light);margin-top:1rem;">No spam: launch note, early access, and one surprise perk.</p>
+<form class="email-form email-form--surface" style="margin-top:1rem;max-width:100%;">
+<input type="email" name="email" required placeholder="you@email.com" autocomplete="email" aria-label="Email" />
+<button type="submit" class="btn btn-primary">Join the list</button>
+</form>
+</div>
+<div class="product-visual-wrap stagger-child" style="align-items:center;">
+<div class="product-card" style="animation:none;">
+<span class="brand-small">On &amp; Off</span>
+<p class="product-title">Hydrating<br />SPF</p>
+<p class="product-note">Daily · Lightweight · No white cast*</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section bg-peach reveal-section" id="benefits" aria-labelledby="benefits-heading">
+<div class="container">
+<h2 id="benefits-heading" class="stagger-child">Looks good. Feels better. Works daily.</h2>
+<div class="feature-grid" style="margin-top:2rem;">
+<article class="feature-card stagger-child"><div class="feat-icon" aria-hidden="true"></div><h3>Feels like skincare</h3><p class="prose" style="margin:0;">A hydrating, skin-first base so daily protection doesn&#8217;t feel like a chore.</p></article>
+<article class="feature-card stagger-child"><div class="feat-icon" aria-hidden="true"></div><h3>No sticky drama</h3><p class="prose" style="margin:0;">Designed to melt in fast with a fresh, touchable finish, not a tacky film.</p></article>
+<article class="feature-card stagger-child"><div class="feat-icon" aria-hidden="true"></div><h3>Made for real weather</h3><p class="prose" style="margin:0;">Heat, sweat, and humidity are the brief. Comfort is the non-negotiable.</p></article>
+<article class="feature-card stagger-child"><div class="feat-icon" aria-hidden="true"></div><h3>Shelfie energy</h3><p class="prose" style="margin:0;">Modern packaging with editorial presence, built for feeds, not pharmacy aisles.</p></article>
+</div>
+</div>
+</section>
+<section class="section bg-finish reveal-section" id="texture" aria-labelledby="finish-heading">
+<div class="container">
+<div class="stagger-child">
+<h2 id="finish-heading">The <span class="hl-coral">finish</span> is the <span class="hl-coral">product</span>.</h2>
+<p class="prose">We obsessed over the moment sunscreen stops being &quot;on your skin&quot; and starts feeling like your skin: smooth, fresh, and ready for concealer, blush, or nothing at all.</p>
+</div>
+<div class="formula-visual stagger-child" style="margin-top:2rem;">
+<p>Macro texture story: replace with lotion smear photography.<br /><span style="font-size:.8rem;">Art-directed smear + dewy skin crop recommended for launch.</span></p>
+</div>
+</div>
+</section>
+<section class="section bg-mint reveal-section" id="texture-specs" aria-label="Texture and finish specifications">
+<div class="container">
+<div class="spec-grid">
+<div class="spec-block stagger-child"><dl><dt>Texture</dt><dd>Bouncy-lotion glide &rarr; fast absorption</dd></dl></div>
+<div class="spec-block stagger-child"><dl><dt>Finish</dt><dd>Natural radiance, not disco-ball glitter</dd></dl></div>
+<div class="spec-block stagger-child"><dl><dt>Wear test</dt><dd>Commute, college, creator days, AC offices</dd></dl></div>
+<div class="spec-block stagger-child"><dl><dt>Skin types</dt><dd>Oily &middot; combo &middot; acne-prone friendly philosophy</dd></dl></div>
+</div>
+</div>
+</section>
+<section class="section formula-section reveal-section" id="formula" aria-labelledby="formula-heading">
+<div class="container">
+<p class="section-label stagger-child">Formula philosophy</p>
+<h2 id="formula-heading" class="stagger-child">Clear science. Zero intimidation.</h2>
+<p class="prose stagger-child">We&apos;re not here to bluff with a 40-ingredient flex. On &amp; Off is built around understandable benefits: hydration you can feel, protection you&apos;ll actually reapply, and a finish that respects how you live online and IRL.</p>
+<p class="prose stagger-child" style="font-size:.9rem;">Final claims, SPF label, and PA rating will match regulatory testing and on-pack copy.</p>
+<div class="stagger-child" style="margin-top:1.5rem;">
+<div class="accordion-item" data-acc><button type="button" class="accordion-btn" aria-expanded="false">Hydration matrix <span class="faq-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Humectants + barrier-friendly moisturization, comfort that lasts through the day.</div></div></div>
+<div class="accordion-item" data-acc><button type="button" class="accordion-btn" aria-expanded="false">Modern UV filters <span class="faq-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Thoughtful filter strategy for daily wear. Final INCI on-pack at launch.</div></div></div>
+<div class="accordion-item" data-acc><button type="button" class="accordion-btn" aria-expanded="false">Finish-first formulating <span class="faq-icon">+</span></button><div class="accordion-panel"><div class="accordion-panel-inner">Texture agents chosen for spreadability and a skin-like dry-down.</div></div></div>
+</div>
+</div>
+</section>
+<section class="section india-section reveal-section" id="india" aria-labelledby="india-heading">
+<div class="container">
+<h2 id="india-heading" class="stagger-child">Made for Indian summers and the life that happens inside them.</h2>
+<p class="prose stagger-child">From college runs to creator shoot days, your SPF should survive the weather in your DMs and the weather outside. On &amp; Off is tuned for the texture complaints we hear most: grease, stickiness, and that white-cast anxiety.</p>
+<div class="india-grid" style="margin-top:2rem;">
+<div class="india-card stagger-child"><h3>Humidity-aware wear</h3><p class="prose" style="margin:0;">Less heavy film, more breathable comfort when the air feels thick.</p></div>
+<div class="india-card stagger-child"><h3>Heat + sweat realism</h3><p class="prose" style="margin:0;">Built for reapplication culture: quick, easy, not a makeup disaster.</p></div>
+<div class="india-card stagger-child"><h3>Tanning + glare context</h3><p class="prose" style="margin:0;">Daily protection messaging that respects Indian sun behavior, without fear tactics.</p></div>
+</div>
+</div>
+</section>
+<section class="section section--coral reveal-section" id="trust" aria-label="Trust and safety">
+<div class="container"><div class="trust-block stagger-child">
+<h2>Trust, without the hospital vibe.</h2>
+<p class="prose">We believe proof should be readable, not loud. On-pack directions, honest finish notes, and clear guidance for acne-prone routines matter more than jargon. Final testing documentation and claims will be published to match regulatory requirements at launch.</p>
+<ul><li>Transparent labeling roadmap</li><li>Sensitive-skin conscious formulation philosophy</li><li>Customer care that speaks human</li></ul>
+</div></div>
+</section>
+<section class="section bg-sky reveal-section" id="reviews" aria-labelledby="reviews-heading">
+<div class="container">
+<h2 id="reviews-heading" class="stagger-child">Customer love, straight from the feed.</h2>
+<p class="prose stagger-child">Sample voices for layout. Swap for verified UGC and real customer photos at launch.</p>
+<div class="testimonial-row" style="margin-top:2rem;">
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a woman, professional headshot" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Finally something I can reapply without feeling glazed over, even when Mumbai turns into a steam room.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Priya Nair, 24</strong><span class="testimonial-meta">India · combination skin</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a man, neutral background" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>I needed SPF that does not fight my moisturizer. This one sits quiet on my face.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Marcus Brooks, 29</strong><span class="testimonial-meta">USA · sensitive / combo</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a young woman smiling" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Shelfie cute, but the real win is I stopped skipping SPF before college.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Ananya Iyer, 21</strong><span class="testimonial-meta">India · acne-prone</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a woman outdoors" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Heat and subway sweat used to mean a shiny forehead by noon. Way more manageable now.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Emily Carter, 27</strong><span class="testimonial-meta">USA · oily T-zone</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a man, close-up" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>My dermatologist nagged me for years. This is the first tube I finished on purpose.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Vikram Desai, 33</strong><span class="testimonial-meta">India · daily commuter SPF</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a woman, soft lighting" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Under makeup it does not pill the way my old sunscreen did. Huge for shoot days.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Sarah Lin, 26</strong><span class="testimonial-meta">USA · creator / combination</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a young woman, studio light" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Humidity in Chennai broke every matte claim I tried. This one feels honest.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Kavya Reddy, 23</strong><span class="testimonial-meta">India · very oily</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a man in a shirt" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Smells clean, not like a pool deck. Small thing, but it keeps me reaching for it.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Tyler Dunn, 31</strong><span class="testimonial-meta">USA · post-shave friendly</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a woman, warm tones" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>No chalky mask on my deeper tone when I blend it in properly. Finally feels considered.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Ashley Rivera, 28</strong><span class="testimonial-meta">USA · deeper skin tone</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a man, casual" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Reapplication after lunch is not a full face redo anymore. That alone sold me.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Rohan Kapoor, 25</strong><span class="testimonial-meta">India · office + gym</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a man smiling" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>I pack light for work trips. One reliable SPF beats three half-used bottles.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>James Whitaker, 35</strong><span class="testimonial-meta">USA · minimal routine</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1580489944761-6b691dcf8e4e?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a young woman smiling" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Mom kept sending sunscreen links. This is the first one I did not argue about.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Neha Joshi, 20</strong><span class="testimonial-meta">India · first real SPF habit</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a woman with curly hair" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Austin sun is no joke. I wanted protection without looking like I dipped in flour.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Hannah Scott, 30</strong><span class="testimonial-meta">USA · fair / burns easily</span></footer></div></div></article>
+<article class="testimonial-card"><div class="testimonial-inner"><img class="testimonial-avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=faces&q=80" alt="Portrait of a man in business casual" width="64" height="64" loading="lazy" decoding="async" /><div class="testimonial-body"><p class="testimonial-quote"><span class="qm">&#8220;</span>Does not sting around my eyes when I sweat. Sounds basic, it is everything.<span class="qm">&#8221;</span></p><footer class="testimonial-foot"><strong>Arjun Malhotra, 27</strong><span class="testimonial-meta">India · runs outdoors</span></footer></div></div></article>
+</div>
+</div>
+</section>
+<section class="section bg-peach reveal-section" id="how" aria-labelledby="how-heading">
+<div class="container">
+<h2 id="how-heading" class="stagger-child">How to use, no 12-step fantasy.</h2>
+<div class="steps-grid" style="margin-top:2rem;">
+<article class="step-card stagger-child" data-step><div class="step-num" data-target="1">00</div><h3>Cleanse + hydrate lightly</h3><p class="prose" style="margin:0;">Start with a gentle cleanse. If your skin drinks water, add a thin mist or serum.</p></article>
+<article class="step-card stagger-child" data-step><div class="step-num" data-target="2">00</div><h3>Apply generously</h3><p class="prose" style="margin:0;">Use enough product for full-face coverage. Don&#8217;t tap-dab a pea and pray.</p></article>
+<article class="step-card stagger-child" data-step><div class="step-num" data-target="3">00</div><h3>Reapply like it&#8217;s normal</h3><p class="prose" style="margin:0;">Keep it in your bag. Two finger-lengths of discipline beats one perfect morning.</p></article>
+</div>
+</div>
+</section>
+<section class="section bg-sunshine reveal-section" id="routine" aria-labelledby="routine-heading">
+<div class="container two-col">
+<div class="stagger-child">
+<h2 id="routine-heading">Build your summer kit.</h2>
+<p class="prose">Start with daily SPF. Add a gentle cleanser and a barrier-friendly moisturizer when you expand the line. The site architecture is built to grow with you.</p>
+<div class="kit-chips"><span class="kit-chip">SPF (hero)</span><span class="kit-chip">Cleanser (next)</span><span class="kit-chip">Lip care (later)</span></div>
+</div>
+<div class="kit-card stagger-child">
+<p style="font-weight:600;margin:0 0 1rem;">Routine card: pair SPF with minimal steps for oily skin.</p>
+<ul class="prose" style="margin:0;padding-left:1.2rem;">
+<li>AM: cleanse &rarr; hydrate &rarr; On &amp; Off SPF</li>
+<li>PM: double cleanse if makeup &rarr; barrier moisturizer</li>
+<li>Weekly: treat spots, not your whole personality</li>
+</ul>
+<a class="btn btn-primary" href="/#cta" style="margin-top:1.5rem;">Get launch access</a>
+</div>
+</div>
+</section>
+<section class="section section--dark reveal-section" id="brand" aria-labelledby="brand-heading">
+<div class="container" style="text-align:center;">
+<h2 id="brand-heading" class="stagger-child">Premium skincare meets internet culture.</h2>
+<p class="prose stagger-child" style="max-width:36rem;margin-left:auto;margin-right:auto;">On &amp; Off is founder-led, visually intentional, and built for the generation that reads packaging like a moodboard.</p>
+<p class="stagger-child" style="font-size:.9rem;"><a href="/blog" style="color:var(--coral);font-weight:700;">Read the Journal</a> for routines, SPF without scare tactics, and launch notes.</p>
+<div class="brand-marquee-wrap stagger-child"><div class="brand-marquee" aria-hidden="true">
+<span>Shelfie-worthy</span><span>Heat-tested</span><span>Humidity-smart</span><span>Skin-first</span><span>Scroll-worthy</span><span>Reapply-friendly</span>
+<span>Shelfie-worthy</span><span>Heat-tested</span><span>Humidity-smart</span><span>Skin-first</span><span>Scroll-worthy</span><span>Reapply-friendly</span>
+</div></div>
+</div>
+</section>
+<section class="section bg-white reveal-section faq-section" id="faq" aria-labelledby="faq-heading">
+<div class="container" style="max-width:48rem;">
+<h2 id="faq-heading" class="stagger-child">FAQ: quick, honest answers.</h2>
+<div class="stagger-child" style="margin-top:1.5rem;">
+<div class="faq-item"><button type="button" class="faq-q" aria-expanded="false">Will this leave a white cast?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><div class="faq-a-inner">We design for a sheer, skin-like finish, but cast can vary by skin tone and amount applied. Final on-pack guidance will include application tips for even blending.</div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" aria-expanded="false">Is it okay for acne-prone skin?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><div class="faq-a-inner">The line is developed with oily and acne-prone comfort in mind, but everyone&#8217;s skin is unique. Patch test when introducing new SPF, and pair with a gentle routine.</div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" aria-expanded="false">How often should I reapply?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><div class="faq-a-inner">Think two finger-lengths for face and neck, then reapply every 2 hours with sun exposure, or sooner with sweat and towels.</div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" aria-expanded="false">Do you ship across India?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><div class="faq-a-inner">Fulfillment details will be confirmed at launch. The site is built to plug into your logistics partner with clear delivery expectations.</div></div></div>
+</div>
+</div>
+</section>
+<section class="section final-cta reveal-section" id="cta" aria-labelledby="cta-heading">
+<div class="container">
+<h2 id="cta-heading" class="stagger-child">Get launch access before the feed finds out.</h2>
+<p class="prose stagger-child" style="max-width:36rem;margin-left:auto;margin-right:auto;">Join the list for early access, launch pricing, and the kind of updates you&apos;d actually open.</p>
+<form class="email-form stagger-child"><input type="email" required placeholder="you@email.com" autocomplete="email" aria-label="Email" /><button type="submit" class="btn btn-primary">Join the list</button></form>
+</div>
+</section>
+</main>
+<footer class="footer-dark" id="footer-support">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="logo" href="/">ON <span class="amp">&amp;</span> OFF</a>
+<p style="margin-top:1rem;">A skincare brand built around one idea: <strong style="color:#fff;">daily SPF you&apos;ll actually wear</strong>. Hydrating, lightweight, made for Indian heat and humidity, for oily, combination, and acne-prone skin.</p>
+<p style="font-size:.75rem;opacity:.65;">Not medical advice. Patch test new products. Final claims on-pack at launch.</p>
+</div>
+<nav class="footer-col" aria-label="Shop"><p class="section-label">Shop</p><ul>
+<li><a href="/#product">Hydrating SPF</a></li><li><a href="/#product">Best sellers</a></li><li><a href="/#cta">New arrivals</a></li>
+<li><a href="/blog">Blog</a></li><li><a href="/#routine">Routines &amp; kits</a></li></ul></nav>
+<nav class="footer-col" aria-label="Explore"><p class="section-label">Explore</p><ul>
+<li><a href="/#product">Hydrating SPF</a></li><li><a href="/#why">Why we exist</a></li><li><a href="/#formula">Formula &amp; ingredients</a></li>
+<li><a href="/#texture">Texture &amp; finish</a></li><li><a href="/#india">India summers</a></li>
+<li><a href="/reviews">Customer reviews</a></li><li><a href="/#how">How to use</a></li><li><a href="/blog">Blog</a></li></ul></nav>
+<nav class="footer-col" aria-label="Help"><p class="section-label">Help</p><ul>
+<li><a href="/track">Track order</a></li><li><a href="/#faq">Shipping &amp; delivery</a></li><li><a href="/#faq">Returns</a></li>
+<li><a href="mailto:hello@onandoff.in">Contact us</a></li></ul></nav>
+<nav class="footer-col" aria-label="About"><p class="section-label">About</p><ul>
+<li><a href="/#why">Why On &amp; Off</a></li><li><a href="/#formula">Formula philosophy</a></li>
+<li><a href="/reviews">Reviews</a></li><li><a href="/#how">How to use</a></li></ul></nav>
+</div>
+<div class="container" style="margin-top:2rem;"><div class="two-col" style="gap:2rem;align-items:end;">
+<div><p class="section-label">Notes from the founder</p>
+<p style="font-size:.9rem;opacity:.8;max-width:28rem;">Email for launch access. No spam, just the good stuff.</p>
+<form class="email-form footer-email stagger-child" style="margin-top:1rem;max-width:100%;"><input type="email" required placeholder="you@email.com" autocomplete="email" aria-label="Email" /><button type="submit" class="btn btn-primary">Join the list</button></form>
+</div>
+<div style="font-size:.9rem;opacity:.75;"><p style="font-weight:600;color:#fff;margin:0;">We accept</p>
+<p style="font-size:.8rem;margin:.5rem 0 0;">UPI &middot; Cards &middot; Netbanking. Connect your payment provider at launch. COD if you enable it.</p>
+<p style="font-size:.75rem;opacity:.6;margin-top:1rem;">Instagram &middot; YouTube. Add @handles when live.</p></div>
+</div></div>
+<div class="container footer-legal" id="footer-legal"><p>© 2026 On &amp; Off. All rights reserved.</p><div><a href="/#footer-legal" style="margin-right:1rem;">Privacy</a><a href="/#footer-legal">Terms</a></div></div>
+</footer>
+<script>
+(function(){
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var progress=document.getElementById("scroll-progress");
+function onScroll(){var h=document.documentElement;var pct=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;progress.style.width=Math.min(100,Math.max(0,pct))+"%";}
+window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+var header=document.getElementById("site-header");
+window.addEventListener("scroll",function(){header.classList.toggle("nav-scrolled",window.scrollY>80);},{passive:true});
+var toggle=document.getElementById("nav-toggle");var panel=document.getElementById("mobile-panel");var backdrop=document.getElementById("mobile-backdrop");
+function closeMenu(){panel.classList.remove("open");backdrop.classList.remove("show");toggle.setAttribute("aria-expanded","false");}
+if(toggle){toggle.addEventListener("click",function(){var open=!panel.classList.contains("open");panel.classList.toggle("open",open);backdrop.classList.toggle("show",open);toggle.setAttribute("aria-expanded",open?"true":"false");});}
+backdrop.addEventListener("click",closeMenu);panel.querySelectorAll("a").forEach(function(a){a.addEventListener("click",closeMenu);});
+if(!reduce){document.querySelectorAll(".word-reveal").forEach(function(el,i){el.style.transitionDelay=(i*0.08)+"s";requestAnimationFrame(function(){el.classList.add("show");});});}else{document.querySelectorAll(".word-reveal").forEach(function(el){el.classList.add("show");});}
+var hero=document.getElementById("hero");var glow=document.getElementById("hero-cursor-glow");var gx=0,gy=0,tx=0,ty=0;
+if(hero&&glow&&!reduce&&window.matchMedia("(min-width:900px)").matches){
+hero.addEventListener("mouseenter",function(){glow.style.opacity="1";});hero.addEventListener("mouseleave",function(){glow.style.opacity="0";});
+hero.addEventListener("mousemove",function(e){var r=hero.getBoundingClientRect();tx=e.clientX-r.left;ty=e.clientY-r.top;});
+function lerpGlow(){gx+=(tx-gx)*0.12;gy+=(ty-gy)*0.12;glow.style.left=gx+"px";glow.style.top=gy+"px";requestAnimationFrame(lerpGlow);}
+requestAnimationFrame(lerpGlow);
+}
+document.querySelectorAll(".reveal-section").forEach(function(sec){sec.querySelectorAll(".stagger-child").forEach(function(ch,i){ch.style.transitionDelay=(i*0.1)+"s";});});
+var io=new IntersectionObserver(function(ents){ents.forEach(function(en){if(en.isIntersecting){en.target.classList.add("is-visible");io.unobserve(en.target);}});},{threshold:0.12});
+document.querySelectorAll(".reveal-section").forEach(function(s){io.observe(s);});
+var faqItems=document.querySelectorAll(".faq-item");
+faqItems.forEach(function(item){var btn=item.querySelector(".faq-q");btn.addEventListener("click",function(){var open=item.classList.contains("open");faqItems.forEach(function(o){o.classList.remove("open");o.querySelector(".faq-q").setAttribute("aria-expanded","false");});if(!open){item.classList.add("open");btn.setAttribute("aria-expanded","true");}});});
+document.querySelectorAll(".accordion-item").forEach(function(item){var btn=item.querySelector(".accordion-btn");btn.addEventListener("click",function(){var open=item.classList.contains("open");document.querySelectorAll(".accordion-item").forEach(function(o){o.classList.remove("open");o.querySelector(".accordion-btn").setAttribute("aria-expanded","false");});if(!open){item.classList.add("open");btn.setAttribute("aria-expanded","true");}});});
+var stepObs=new IntersectionObserver(function(ents){ents.forEach(function(en){if(!en.isIntersecting)return;var card=en.target;var num=card.querySelector(".step-num");var target=parseInt(num.getAttribute("data-target"),10);var start=null;function tick(ts){if(!start)start=ts;var p=Math.min(1,(ts-start)/400);num.textContent=String(Math.round(p*target)).padStart(2,"0");if(p<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);stepObs.unobserve(card);});},{threshold:0.3});
+document.querySelectorAll("[data-step]").forEach(function(c){stepObs.observe(c);});
+document.querySelectorAll(".email-form").forEach(function(form){form.addEventListener("submit",function(e){e.preventDefault();var btn=form.querySelector('button[type="submit"]');var orig=btn.textContent;btn.textContent="You're in \u2713";btn.style.transform="scale(1.05)";setTimeout(function(){btn.style.transform="";btn.textContent=orig;},1800);});});
+})();
+</script>
+</body>
+</html>
