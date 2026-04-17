@@ -284,6 +284,8 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 .footer-brand p{font-size:.875rem;line-height:1.6;color:rgba(255,255,255,.7)}
 .footer-brand .logo{color:#fff}
 .footer-col ul{list-style:none;padding:0;margin:.75rem 0 0}
+.footer-track{scroll-margin-top:var(--scroll-header)}
+.footer-contact{scroll-margin-top:var(--scroll-header)}
 .footer-col li{margin-bottom:.5rem}
 .footer-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padding-top:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.75rem;color:rgba(255,255,255,.5)}
 .footer-email input{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff}
@@ -326,7 +328,7 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 <input id="site-search-desktop" type="search" name="q" autocomplete="off" placeholder="Search SPF, ingredients, skin concerns…" />
 </form>
 <div class="header-actions">
-<a href="https://on-off-two.vercel.app/track" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Track order"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></a>
+<a href="#track" class="icon-btn" aria-label="Track order"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></a>
 <a href="#product" class="icon-btn" aria-label="Shopping bag"><span style="position:relative;display:inline-flex"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-badge">0</span></span></a>
 <a href="#cta" class="icon-btn" aria-label="Account"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
 <a class="btn btn-primary header-cta" href="#cta">Get launch access</a>
@@ -667,15 +669,15 @@ h3{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:600;margin:0 0 .5rem}
 <li><a href="#product">Hydrating SPF</a></li><li><a href="#why">Why we exist</a></li><li><a href="#formula">Formula &amp; ingredients</a></li>
 <li><a href="#texture">Texture &amp; finish</a></li><li><a href="#india">India summers</a></li>
 <li><a href="#reviews">Customer reviews</a></li><li><a href="#how">How to use</a></li><li><a href="#blog">Blog</a></li></ul></nav>
-<nav class="footer-col" aria-label="Help"><p class="section-label">Help</p><ul>
-<li><a href="https://on-off-two.vercel.app/track" target="_blank" rel="noopener noreferrer">Track order</a></li><li><a href="#faq">Shipping &amp; delivery</a></li><li><a href="#faq">Returns</a></li>
-<li><a href="mailto:hello@onandoff.in">Contact us</a></li></ul></nav>
+<nav class="footer-col footer-track" id="track" aria-label="Help"><p class="section-label">Help</p><ul>
+<li><a href="#track">Track order</a></li><li><a href="#faq">Shipping &amp; delivery</a></li><li><a href="#faq">Returns</a></li>
+<li><a href="#contact">Contact us</a></li></ul></nav>
 <nav class="footer-col" aria-label="About"><p class="section-label">About</p><ul>
 <li><a href="#why">Why On &amp; Off</a></li><li><a href="#formula">Formula philosophy</a></li>
 <li><a href="#reviews">Reviews</a></li><li><a href="#how">How to use</a></li></ul></nav>
 </div>
 <div class="container" style="margin-top:2rem;"><div class="two-col" style="gap:2rem;align-items:end;">
-<div><p class="section-label">Notes from the founder</p>
+<div class="footer-contact" id="contact"><p class="section-label">Notes from the founder</p>
 <p style="font-size:.9rem;opacity:.8;max-width:28rem;">Email for launch access. No spam, just the good stuff.</p>
 <form class="email-form footer-email stagger-child" style="margin-top:1rem;max-width:100%;"><input type="email" required placeholder="you@email.com" autocomplete="email" aria-label="Email" /><button type="submit" class="btn btn-primary">Join the list</button></form>
 </div>
@@ -723,6 +725,7 @@ var inp=e.target.querySelector('input[type="search"]')||e.target.querySelector("
 var q=(inp&&inp.value||"").toLowerCase().replace(/^\s+|\s+$/g,"");
 var id="product";
 if(/review|testimonial|customer|quote|love/.test(q)) id="reviews";
+else if(/contact|email us|reach out|founder note/.test(q)){var cEl=document.getElementById("contact");if(cEl)cEl.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});closeMenu();return;}
 else if(/faq|ship|return|deliver|help|support/.test(q)) id="faq";
 else if(/formula|ingredient|science|spf|filter/.test(q)) id="formula";
 else if(/texture|finish|wear|bounce|glow/.test(q)) id="texture";
@@ -731,7 +734,7 @@ else if(/india|summer|chennai|mumbai|heat/.test(q)) id="india";
 else if(/how|step|routine|use|apply/.test(q)) id="how";
 else if(/trust|safety|label/.test(q)) id="trust";
 else if(/brand|culture|journal|blog|read/.test(q)){var blogEl=document.getElementById("blog");if(blogEl)blogEl.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});closeMenu();return;}
-else if(/track|order status|parcel/.test(q)){window.open("https://on-off-two.vercel.app/track","_blank");closeMenu();return;}
+else if(/track|order status|parcel/.test(q)){var tr=document.getElementById("track");if(tr)tr.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});closeMenu();return;}
 else if(/launch|access|wait|list|join|cta|signup|sign up/.test(q)) id="cta";
 var el=document.getElementById(id);
 if(el) el.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});
